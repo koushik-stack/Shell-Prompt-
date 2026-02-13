@@ -1,7 +1,7 @@
 package segments
 
 import (
-	"github.com/yourusername/shellprompt/internal/config"
+	"github.com/koushik-stack/Shell-Prompt-/internal/config"
 )
 
 // Segment is the interface for all prompt segments

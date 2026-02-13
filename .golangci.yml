@@ -39,7 +39,7 @@ linters-settings:
   lll:
     line-length: 120
   goimports:
-    local-prefixes: github.com/yourusername/shellprompt
+    local-prefixes: github.com/koushik-stack/Shell-Prompt-
   gocritic:
     enabled-tags:
       - diagnostic

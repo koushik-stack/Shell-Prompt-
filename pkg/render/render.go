@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/yourusername/shellprompt/internal/config"
-	"github.com/yourusername/shellprompt/internal/segments"
-	"github.com/yourusername/shellprompt/internal/shell"
+	"github.com/koushik-stack/Shell-Prompt-/internal/config"
+	"github.com/koushik-stack/Shell-Prompt-/internal/segments"
+	"github.com/koushik-stack/Shell-Prompt-/internal/shell"
 )
 
 // ANSI color codes

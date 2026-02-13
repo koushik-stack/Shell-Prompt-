@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/yourusername/shellprompt/internal/config"
+	"github.com/koushik-stack/Shell-Prompt-/internal/config"
 )
 
 func TestRenderPrompt(t *testing.T) {

@@ -4,19 +4,23 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/yourusername/shellprompt/internal/config"
+	"github.com/koushik-stack/Shell-Prompt-/internal/config"
 )
 
 func TestGitSegment(t *testing.T) {
 	gs := &GitSegment{}
 
-	// Test when not in git repo
+	// Test basic rendering (we're in a git repo now)
 	output, err := gs.Render(map[string]interface{}{})
 	if err != nil {
 		t.Errorf("GitSegment.Render() error = %v", err)
 	}
-	if output != "" {
-		t.Errorf("Expected empty output when not in git repo, got %q", output)
+	// Should have output since we're in a git repo
+	if output == "" {
+		t.Error("Expected non-empty output when in git repo")
+	}
+	if !strings.Contains(output, " on ") {
+		t.Errorf("Expected output to contain ' on ', got %q", output)
 	}
 
 	// Test with show_status property
@@ -26,9 +30,9 @@ func TestGitSegment(t *testing.T) {
 	if err != nil {
 		t.Errorf("GitSegment.Render() error = %v", err)
 	}
-	// Should still be empty if not in git repo
-	if output != "" {
-		t.Errorf("Expected empty output when not in git repo, got %q", output)
+	// Should have output since we're in a git repo
+	if output == "" {
+		t.Error("Expected non-empty output when in git repo with status")
 	}
 }
 

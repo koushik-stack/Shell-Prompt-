@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yourusername/shellprompt/internal/config"
-	"github.com/yourusername/shellprompt/pkg/render"
+	"github.com/koushik-stack/Shell-Prompt-/internal/config"
+	"github.com/koushik-stack/Shell-Prompt-/pkg/render"
 )
 
 func main() {
