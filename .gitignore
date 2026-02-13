@@ -69,6 +69,3 @@ coverage.html
 # Release artifacts
 *.tar.gz
 *.zip
-
-# GoReleaser
-dist/

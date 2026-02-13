@@ -123,16 +123,6 @@ go tool cover -html=coverage.out
 go test ./internal/config
 ```
 
-### CI/CD
-
-This project uses GitHub Actions for continuous integration:
-
-- **Multi-platform testing**: Ubuntu, Windows, macOS
-- **Multiple Go versions**: 1.21, 1.22
-- **Code quality**: golangci-lint, go vet, gofmt
-- **Security scanning**: Gosec
-- **Automated releases**: GoReleaser
-
 ### Code Quality
 
 ```bash
