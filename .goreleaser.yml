@@ -44,8 +44,8 @@ changelog:
 
 release:
   github:
-    owner: yourusername
-    name: shellprompt
+    owner: koushik-stack
+    name: Shell-Prompt-
   draft: false
   prerelease: false
   mode: replace

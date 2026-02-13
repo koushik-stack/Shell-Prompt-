@@ -1,4 +1,4 @@
-module github.com/yourusername/shellprompt
+module github.com/koushik-stack/Shell-Prompt-
 
 go 1.26
 
