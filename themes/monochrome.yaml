@@ -1,0 +1,35 @@
+segments:
+  - type: directory
+    properties:
+      max_depth: 3
+      truncate: true
+    style:
+      foreground: "white"
+      bold: true
+
+  - type: git
+    properties:
+      show_status: true
+    style:
+      foreground: "brightWhite"
+
+  - type: language
+    properties:
+      show_version: false
+    style:
+      foreground: "white"
+
+  - type: time
+    properties:
+      format: "15:04"
+    style:
+      foreground: "brightBlack"
+
+  - type: hostname
+    style:
+      foreground: "white"
+
+colors:
+  primary: "#FFFFFF"
+  secondary: "#CCCCCC"
+  error: "#666666"

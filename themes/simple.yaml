@@ -1,0 +1,18 @@
+segments:
+  - type: directory
+    properties:
+      max_depth: 1
+      truncate: false
+    style:
+      foreground: "green"
+
+  - type: git
+    properties:
+      show_status: false
+    style:
+      foreground: "yellow"
+
+colors:
+  primary: "#00FF00"
+  secondary: "#FFFF00"
+  error: "#FF0000"

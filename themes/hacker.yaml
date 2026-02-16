@@ -1,0 +1,38 @@
+segments:
+  - type: directory
+    properties:
+      max_depth: 5
+      truncate: true
+    style:
+      foreground: "brightGreen"
+      bold: true
+
+  - type: git
+    properties:
+      show_status: true
+    style:
+      foreground: "green"
+
+  - type: language
+    properties:
+      show_version: false
+    style:
+      foreground: "brightGreen"
+
+  - type: time
+    properties:
+      format: "15:04:05"
+    style:
+      foreground: "green"
+
+  - type: username
+    properties:
+      show_host: true
+    style:
+      foreground: "brightGreen"
+      bold: true
+
+colors:
+  primary: "#00FF00"
+  secondary: "#00AA00"
+  error: "#FF0000"

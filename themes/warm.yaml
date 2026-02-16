@@ -1,0 +1,37 @@
+segments:
+  - type: directory
+    properties:
+      max_depth: 3
+      truncate: true
+    style:
+      foreground: "yellow"
+      bold: true
+
+  - type: git
+    properties:
+      show_status: true
+    style:
+      foreground: "green"
+
+  - type: language
+    properties:
+      show_version: false
+    style:
+      foreground: "red"
+
+  - type: time
+    properties:
+      format: "15:04"
+    style:
+      foreground: "magenta"
+
+  - type: exit_code
+    properties:
+      show_always: false
+    style:
+      foreground: "brightRed"
+
+colors:
+  primary: "#FFA500"
+  secondary: "#8B4513"
+  error: "#DC143C"

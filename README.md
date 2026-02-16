@@ -88,6 +88,43 @@ colors:
   secondary: "#0000FF"
 ```
 
+## Themes
+
+ShellPrompt comes with several pre-built themes:
+
+### Available Themes
+
+- **`default`** - Balanced theme with blue directories, green git status, and yellow language indicators
+- **`minimal`** - Clean theme with essential segments only
+- **`dark`** - Dark theme with cyan, green, yellow, magenta, and red colors
+- **`light`** - Light theme with blue, green, purple, cyan, and red colors
+- **`colorful`** - Bright theme using bright colors for all segments
+- **`monochrome`** - Minimalist theme using white and gray tones
+- **`powerline`** - Powerline-style theme with background colors and more segments
+- **`simple`** - Very basic theme with just directory and git status
+- **`developer`** - Developer-focused theme with all segments and bright colors
+- **`futuristic`** - Sci-fi theme with cyan, green, magenta, yellow, and blue
+- **`professional`** - Business-appropriate theme with conservative colors
+- **`hacker`** - Matrix-style theme with green-on-black aesthetic
+- **`warm`** - Cozy theme with orange, brown, and warm colors
+- **`rainbow`** - Colorful theme using all rainbow colors
+- **`ocean`** - Aquatic theme with blue and aqua tones
+
+### Using Themes
+
+To use a theme, copy it to your config location:
+
+```bash
+# Copy a theme to your config directory
+cp themes/default.yaml ~/.config/shellprompt/config.yaml
+```
+
+Or set the `PROMPT_CONFIG` environment variable:
+
+```bash
+export PROMPT_CONFIG=~/themes/colorful.yaml
+```
+
 ## Development
 
 ### Project Structure
