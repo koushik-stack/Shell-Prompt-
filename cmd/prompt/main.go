@@ -16,6 +16,14 @@ var (
 )
 
 func main() {
+	// Handle --version flag first (before any debug output)
+	if len(os.Args) > 1 && (os.Args[1] == "--version" || os.Args[1] == "-v") {
+		fmt.Printf("ShellPrompt version %s\n", Version)
+		fmt.Printf("Commit: %s\n", Commit)
+		fmt.Printf("Date: %s\n", Date)
+		os.Exit(0)
+	}
+
 	fmt.Fprintf(os.Stderr, "ShellPrompt starting...\n")
 	if len(os.Args) < 2 {
 		fmt.Fprintf(os.Stderr, "Usage: %s <shell|--version>\n", os.Args[0])
@@ -23,14 +31,6 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Options:\n")
 		fmt.Fprintf(os.Stderr, "  --version    Show version information\n")
 		os.Exit(1)
-	}
-
-	// Handle --version flag
-	if os.Args[1] == "--version" || os.Args[1] == "-v" {
-		fmt.Printf("ShellPrompt version %s\n", Version)
-		fmt.Printf("Commit: %s\n", Commit)
-		fmt.Printf("Date: %s\n", Date)
-		os.Exit(0)
 	}
 
 	shell := os.Args[1]
